@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+	<script src="https://cdn.master.co/css"></script>
+	  	
+</head>
+<style>
+    
+    * {
+       padding: 0;
+       margin: 0;
+       box-sizing: border-box;
+       font-family: sans-serif;
+     } 
+     
+     .container {
+       height: 100vh;
+       width: 100%;
+       position: relative;	   
+       background-image: url('804379.jpg');
+       background-size: cover;
+       background-position: center;
+       display: flex;
+       justify-content: center;
+       align-items: center;	   
+     }
+     
+     .container .box {
+       height: 90vh;
+       width: 95%;
+       padding: 0 20px;
+       background-color: rgba(255, 255, 255, 0.1);
+       z-index: 1;
+       border: 2px solid rgba(255, 255, 255, 0.7);
+       border-radius: 20px;
+       display: flex;
+       backdrop-filter: blur(5px);
+       box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.15);
+     }
+    .container nav{
+	   height: 7%;
+	   width: 70%;	   
+	   display: flex;
+	   align-items: center;
+	   justify-content: space-between;
+	   margin: 15px auto;
+	   padding: 20px;	   
+	   
+	}
+	.container .logo{
+	   font-size: 32px;
+	   font-weight: 700;
+	   text-decoration: none;
+	   color: #ff6200;
+       margin: 0 auto;
+	   position: relative;
+	   left: 630px;
+       text-shadow: 0 0 10px rgba(255, 98, 0, 0.8);	   
+	}
+	.container nav ul li{
+	   display: inline-block;
+	   padding: 0 20px;
+	}
+	.container nav ul li a{
+	   text-decoration: none;
+	   font-size: 18px;
+	   color: white;
+	   transition: 0.3s;
+	}
+	.container nav ul li a:hover{
+	   color: #ff6200;
+	}
+    content .section-1{
+	   position: relative;
+	   width: 40%;
+	}
+	.content .section-1 h1{
+	   margin-bottom: 20px;
+	   font-size: 37px;
+	   font-weight: 700;
+	   color: #ff6200;
+	   text-shadow: 0 0 10px rgba(255, 98, 0, 0.8);
+       text-shadow: 0 0 10px rgba(0, 0, 0, 1);       
+	}
+	.content .section-1 h3{
+	   font-size: 23px;
+	   color: white;
+       text-shadow: 0 0 10px rgba(0, 0, 0, 1); 
+	   margin-bottom: 10px;
+       position: relative;
+       width: 35%; 
+       right: 10px;
+	   bottom: -100px;
+	   
+	}
+	.content .section-2 img{
+	   width: 33%;
+	   box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+	   position: relative;
+	   right: -525px;
+	   top: -390px;	   
+	}
+	.app-button{
+	   background-color: transparent;
+	   border: none;
+	   outline: none;
+	   box-shadow: none;      
+       position: relative;
+       bottom: -500px;
+       left: 350px;
+       top: -1100px;	   
+	}
+	footer{
+	   position: absolute;
+       text-align: center;
+	   color: white;
+	   z-index: 2; 
+       width: 100%;            
+       padding: 50px; 
+       bottom: -5%; 		
+    }   
+</style>
+<script>
+       document.addEventListener('DOMContentLoaded', function() {
+			var keyframes = `
+				@keyframes fadeIn {
+					from {
+						opacity: 0;
+					}
+					to {
+						opacity: 1;
+					}
+				}
+			`;
+
+			var style = document.createElement('style');
+			style.type = 'text/css';
+			style.innerHTML = keyframes;
+			document.head.appendChild(style);
+			
+			var elementToAnimate = document.querySelector('.box');
+			elementToAnimate.style.animation = 'fadeIn 1s ease-out';
+		});
+</script>
+
+
+
+
+
+</head>
+
+<body>
+     <div class="container">
+      <div class="box">
+           <nav>
+             <a href="#" class="logo">Home</a>
+             <ul>               
+                <li><a href="index.html" style="position: relative; right: 100px;">Back</a></li>
+             </ul>
+           </nav>
+		   <div class="content">
+            <div class="section-1">
+               <h1 style="position: relative; bottom: -90px; right: 10px;
+			   ">Self-Introduction</h1>
+               <h3>Hi, I'm Troy Dave Amol. I enjoy playing online games, with Mobile Legends being my absolute favorite. As for sports, I have a passion for basketball, and part of my daily routine includes jogging and honing my dribbling skills. Engaging in this sport has significantly boosted my self-confidence over time.When it comes to socializing and communication, I identify as an introvert. I'm not particularly inclined to initiate conversations, and I tend to be reserved in my speech. For some reason, I feel a bit nervous when talking to someone.
+
+
+               </h3>             
+            </div>
+			<div class="section-2">	
+               <img src="infographics.png" alt="Description of the image" style="position: relative; bottom: -50px;">
+            </div>	
+			<button class="app-button">
+			   <a href="https://web.facebook.com/profile.php?id=100008450226587">
+		           <img src="vecteezy_facebook-logo-png-facebook-icon-transparent-png_18930476_638.png" alt="Facebook Icon" style="width: 93px; height: 93px; position: relative; left: -600px; bottom: -700px;">
+		       </a>	   
+			</button>
+			<button class="app-button">
+               <a href="https://www.youtube.com/channel/UCmmMwusgDcgXvC9kGn12C0g">
+                   <img src="youtube-logo-png-2092.png" alt="Youtube Icon" style="width: 80px; height: 60px; position: relative; bottom: -685px; left: -625px;">
+               </a>
+            </button>
+			<button class="app-button">
+               <a href="https://www.instagram.com/tetsou14/">
+                   <img src="instagram-icon-transparent-27.jpg" alt="Instagram Icon" style="width: 60px; height: 60px; position: relative; bottom: -685px; left: -637px; ">
+               </a>
+            </button>
+
+
+
+
+      </div>
+     </div>
+
+
+
+
+
+
+<footer>
+Credits: Troy Dave Amol
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

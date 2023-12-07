@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT111 Blog Entries Page</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdn.master.co/css"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-image: url('wp2708227.jpg');
+            background-size: cover;
+            background-repeat: repeat;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .box {
+            width: 95%;
+            max-width: 2000px;
+            padding: 70px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.7);
+            border-radius: 20px;
+            box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.15);
+            backdrop-filter: blur(5px);
+            margin-top: 10px;
+        }
+
+        nav {
+            height: 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            flex-direction: row;         
+        }
+		
+
+        .logo {
+            font-size: 32px;
+            font-weight: 700;
+            text-decoration: none;
+            color: #ff6200;
+            text-shadow: 0 0 10px rgba(255, 98, 0, 0.8);
+            margin: 0 auto; 
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin-top: 10px; 
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff6200;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .section {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        h1, h3, h4, p {
+            text-align: center;
+            color: white;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            text-shadow: 0 0 10px rgba(255, 98, 0, 0.8);
+            font-size: 33px;
+            font-weight: 700;
+            margin-bottom: 10px;			
+			color: #ff6200;
+			margin-left: auto;
+			text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+			
+        }
+
+        h3 {
+            font-size: 23px;
+            color: #FFC000;
+        }
+
+        h4 {
+            font-size: 20px;
+            text-decoration: underline;
+            margin-bottom: 10px;
+        }
+
+        p{
+            font-size: 18px;
+            margin-bottom: 20px;
+            line-height: 1.5; 
+            padding: 25px; 
+            background-color: rgba(255, 133, 107); 
+            border-radius: 10px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+			backdrop-filter: blur(5px);
+        }
+		footer{
+		    position: absolute;
+            text-align: center;
+		    color: white;
+		    z-index: 2; 
+            width: 100%;            
+            padding: 50px; 
+            bottom: -173%; 		
+        }		
+			
+    </style>
+    
+    <style>
+        
+    </style>
+<script>
+       document.addEventListener('DOMContentLoaded', function() {
+			var keyframes = `
+				@keyframes fadeIn {
+					from {
+						opacity: 0;
+					}
+					to {
+						opacity: 1;
+					}
+				}
+			`;
+
+			var style = document.createElement('style');
+			style.type = 'text/css';
+			style.innerHTML = keyframes;
+			document.head.appendChild(style);
+			
+			var elementToAnimate = document.querySelector('.box');
+			elementToAnimate.style.animation = 'fadeIn 1s ease-out';
+		});
+</script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <nav>
+                <a href="#" class="logo" style="margin-right: 450px; margin-top: -10%;">IT111 Blog Entries Page</a>
+                <ul>
+                    <li><a href="index.html" style="margin-left: -1250px; margin-top: -300px;">Back</a></li>
+                </ul>
+            </nav>
+            <div class="content">
+                <div class="section">
+                    <h1 style="margin-left: -70%;">Learnings Every Lesson</h1>
+                    <h3 style="margin-left: -80%;">Lesson 1</h3>
+                    <h4 style="margin-left: -83%;">What is Computing</h4>
+                    <p>
+                        It explores computing's ubiquity in daily tasks and introduces the Computing Curricula 2005 definition. It delves into the core aspects of computing, highlighting its role in problem-solving and information processing. The historical timeline traces computing eras from mechanical to present-day, emphasizing key developments and impacts on society. The narrative extends to computing's influence on education, business, marketing, military, healthcare, and communication. Overall, the content provides a comprehensive overview of computing's evolution and multifaceted societal contributions.
+                    </p>
+                </div>               
+                <div class="section">
+                    <h3 style="margin-left: -80%;">Lesson 2</h3>
+					<h4 style="margin-left: -68%;">Professions and Careers in Computing</h4>
+                    <p>
+                        In the contemporary world, computers are integral to various facets of life, with constant advancements in applications. Their widespread use extends across academia, research, industry, government, and businesses. As technology becomes even more ubiquitous, the potential for diverse careers in computer-related fields expands. Graduates in these fields can explore opportunities in programming, software development, information systems, telecommunications, computer science research, graphics, multimedia, web development, internet-related roles, as well as training and support.
+                    </p>
+                </div>
+                
+				<div class="section">
+				    <h3 style="margin-left: -80%;">Lesson 3</h3>
+                    <h4 style="margin-left: -75%;">Information Processing Cycle</h4>
+                    <p>
+                        The Information Processing Cycle involves input, processing, storage, and output, with data being raw facts and information as processed, organized data. The four components of a computer system are hardware, software, people ware, and data ware. Hardware includes input/output devices and storage. Software comprises system and application software. People ware refers to users, and data ware involves data management tools. The text emphasizes the pandemic's impact on purchasing power. Examples illustrate data vs. information and hardware components. Overall, the content introduces key concepts in computing.
+                    </p>
+                </div>
+				<div class="section">
+				    <h3 style="margin-left: -80%;">Lesson 4</h3>
+					<h4 style="margin-left: -70%;">Basic Concept of Computer Security</h4>
+					<p>
+					    It emphasizes daily applications and historical evolution through different eras. The definition of computing involves goal-oriented activities utilizing computers for tasks ranging from simple calculations to complex algorithm development. The text explores the impact of computing on education, business, marketing, military, healthcare, and communication. Additionally, it encourages readers to engage with technology trivia and consider the societal implications of their inventions. Overall, the content provides a comprehensive overview of computing concepts and its far-reaching influence on various sectors of society and industries.
+					
+					</p>
+				</div>
+				<div class="section">
+				    <h3 style="margin-left: -80%;">Lesson 5</h3>
+					<h4 style="margin-left: -86%;">HTML and CSS</h4>
+					<p>
+					    HTML, or Hyper Text Markup Language, is explained as the standard markup language for web pages, utilizing tags to structure content. CSS, or Cascading Style Sheet, is a design language that controls the visual presentation of HTML elements. The chapter covers key HTML tags, CSS selectors for element styling, and the distinctions between CSS and JavaScript. Additionally, it introduces wireframes as low-fidelity representations for early UI structure decisions and mockups as higher-fidelity depictions, resembling the final product, useful for client presentations and design approval.
+					
+					</p>
+				</div>	
+				<div class="section">
+				    <h1 style="margin-left: -75%;">My Favorite Lesson</h1>
+					<p>					    
+					    So far, my favorite lesson is about HTML and CSS because, for me, creating websites or webpages is somewhat like editing, which happens to be one of my favorite things to do. It genuinely makes me happy when I finish my work. I am also looking forward to improving my skills in this kind of work.
+					</p>
+				</div>
+            </div>
+        </div>
+    </div>
+    <footer>
+      Credits: Troy Dave Amol 
+    </footer>
+</body>
+
+</html>

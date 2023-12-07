@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT111 Blog Entries Page</title>
+    <link rel="stylesheet" href="style.css">
+	<script src="https://cdn.master.co/css"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-image: url('Moonlight-Japanese-Painting-AI-Generated-4K-Wallpaper.jpg');
+            background-size: cover;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .box {           
+            width: 95%;
+            max-width: 2000px;
+            padding: 50px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.7);
+            border-radius: 20px;
+            box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.15);
+            backdrop-filter: blur(5px);
+            z-index: 1;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: 700;
+            text-decoration: none;
+            color: #ff6200;
+            text-shadow: 0 0 10px rgba(255, 98, 0, 0.8);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff6200;
+        }
+
+        .content {
+            margin-top: 20px; 
+        }
+
+        img {
+            max-width: 90%; 
+            height: 0%;
+            margin-bottom: 10px; 
+        }
+		.section{
+		    display: flex;
+			align-items: left-side;
+		}
+		img{
+		    margin-right: -100px;
+			
+		}
+
+        p {
+            flex: 1;
+			font-size: 18px;
+            margin-bottom: 100px;
+            line-height: 1.5;
+            padding: 25px;
+            background-color: rgba(255, 133, 107);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(5px);
+			max-width: 50%;			
+        }
+
+        h3 {
+            font-size: 23px;
+            color: #FFC000;
+			text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+        }
+        footer{
+		    position: absolute;
+            text-align: center;
+		    color: white;
+		    z-index: 2; 
+            width: 100%;            
+            padding: 50px; 
+            bottom: -70%; 		
+        }		
+        		
+
+    </style>
+<script>
+       document.addEventListener('DOMContentLoaded', function() {
+			var keyframes = `
+				@keyframes fadeIn {
+					from {
+						opacity: 0;
+					}
+					to {
+						opacity: 1;
+					}
+				}
+			`;
+
+			var style = document.createElement('style');
+			style.type = 'text/css';
+			style.innerHTML = keyframes;
+			document.head.appendChild(style);
+			
+			var elementToAnimate = document.querySelector('.box');
+			elementToAnimate.style.animation = 'fadeIn 1s ease-out';
+		});
+</script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <nav>
+			    
+                <a href="index.html" class="logo" style="position: absolute; right: 47%;">Flex</a>
+                <ul>
+                    <li><a href="index.html">Back</a></li>
+                </ul>
+            </nav>
+            <div class="content">
+                <div class="section">
+                    <img src="pngegg.png" alt="Description of the image" style="max-width: 9%; position: relative; bottom: -50px;">
+                    <h3 style="position: relative; bottom: -10px; right: -120px;">Basketball</h3>
+                    <p style="position: relative; bottom: -50px;">
+                        Something of which I can be proud is playing basketball. I'm not saying I'm exceptionally good at it, but at least I know how to dribble, shoot, and handle other aspects of the game.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="section">
+				    <img src="pngwing.com.png" alt="Description of the image" style="max-width: 9%; position: relative; bottom: -50px; top: 20px; right: -1220px;">
+                    <h3 style="position: relative; top: -40px; right: -1080px;">Editing</h3>
+                    <p style="position: relative; right: -420px;">
+                        Another thing that I'm really proud of is my editing skills. I've been creating lots of anime edits for the past three years, and right now, I'm in the process of improving my editing skills with the hope that one day it will become a career for me.
+                    </p>
+                </div>
+				<div class="content">
+                <div class="section">
+                    <img src="ribbon-award-clip-art-achievement-6642f1f72f7a6ea1682941909c676b48.png" alt="Description of the image" style="max-width: 9%; position: relative; bottom: 45px;">
+                    <h3 style="position: relative; bottom: 80px; right: -136px;">Academic Achiever</h3>
+                    <p style="position: relative; bottom: 40px; left: -85px;">
+                        In my senior high school days, I consistently earned honors, a notable achievement considering my junior high school experience where I often received grades around 7. This transformation stemmed from the realization that as a senior high student, it was crucial to study diligently, knowing that my college life was approaching.
+                    </p>
+                </div>
+                <div class="content">
+                <div class="section">
+				    <img src="12345.png" alt="Description of the image" style="max-width: 19%; position: relative; bottom: -50px; top: -100px; right: -1100px;">
+                    <h3 style="position: relative; top: -120px; right: -800px;">IT Student</h3>
+                    <p style="position: relative; right: -140px; top: -80px;">
+                        Lastly, being an IT student is my utmost joy. It feels like I am superior to students in other courses. Additionally, my classmates are not only friendly but also highly active during classes.
+                    </p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+    Credits: Troy Dave Amol
+    </footer>
+
+</body>
+
+</html>

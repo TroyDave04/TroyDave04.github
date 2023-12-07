@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Home Page</title>
+   <title>My Personal Webpage</title>
+   <link rel="stylesheet" href="style.css">   
+   
+   <style>
+     * {
+       padding: 0;
+       margin: 0;
+       box-sizing: border-box;
+       font-family: sans-serif;
+     } 
+     
+     .container {
+       height: 100vh;
+       width: 100%;
+       position: relative;	   
+       background-image: url('c3uhsgo1vx541.jpg');
+       background-size: cover;
+       background-position: center;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+     }
+     
+     .container .box {
+       height: 86vh;
+       width: 75%;
+       padding: 0 20px;
+       background-color: rgba(255, 255, 255, 0.1);
+       z-index: 1;
+       border: 2px solid rgba(255, 255, 255, 0.7);
+       border-radius: 20px;
+       display: flex;
+       backdrop-filter: blur(5px);
+       box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.15);
+     }
+	 .container nav{
+	   height: 7%;
+	   width: 70%;
+	   position: absolute;
+	   display: flex;
+	   align-items: center;
+	   justify-content: space-between;
+	   margin: 15px auto;
+	   padding: 20px;
+	   
+	}
+	.container .logo{
+	   font-size: 32px;
+	   font-weight: 700;
+	   text-decoration: none;
+	   color: white;
+	   margin-left: 30px;
+	}
+	.container .logo::first-letter{
+	   color: #ff6200;
+	   font-size: 35px;
+	}
+	.container nav ul li{
+	   display: inline-block;
+	   padding: 0 20px;
+	}
+	.container nav ul li a{
+	   text-decoration: none;
+	   font-size: 18px;
+	   color: white;
+	   transition: 0.3s;
+	}
+	.container nav ul li a:hover{
+	   color: #ff6200;
+	}
+	.content{
+	   position: relative;
+	   display: flex;
+	   justify-content: space-between;
+	   align-items: center;
+	   width: 100%;
+	   margin-top: 8%;
+	   padding-left: 80px;
+	}
+	.content .section-1{
+	   position: relative;
+	   width: 40%;
+	}
+	.content .section-1 h1{
+	   margin-bottom: 20px;
+	   font-size: 50px;
+	   font-weight: 700;
+	   color: white;
+	}
+	.content .section-1 h3{
+	   font-size: 24px;
+	   color: #ff6200;
+	   margin-bottom: 10px;
+	   position: relative;
+	   right: -20px;
+	}
+	.content .section-1 p{
+	   font-size: 15px;
+	   color: white;
+	   margin-bottom: 50px;
+	}
+	.content .section-2{
+	   width: 60%;
+	   position: relative;
+	   
+	}
+	.content .section-2::after{
+	   content: '';
+	   position: absolute;
+	   background-color: #ff6200; 
+	   border-radius: 50%;
+	   width: 300px;
+	   height: 300px;
+	   z-index: -1;
+	   top: -10%;
+	   left: 55%;
+	   
+	}
+	.content .section-2 img{
+	   width: 90%;
+	   position: relative;
+	   right: -160px;
+	   top: -80px;	  
+	}
+	.content .btn{
+	   padding: 15px 20px;
+	   border-radius: 5px;
+	   background-color: orange;
+	   border: 3px solid #ff6200;
+	   font-weight: 500;
+	   text-decoration: none;
+	   transition: 0.3s;
+	   color: #fff;
+	}
+	.content .btn:hover{
+	   background-color: #fff;
+	   color: #ff6200;
+	}
+	ul{
+	   position: relative;
+	   right: -250px;
+	}
+	.content .social{
+	   display: flex;
+	   flex-direction: column;
+	   gap: 30px;
+	   position: absolute;
+	   left: 10%;
+	   top: 30%;
+	}
+	.content .social a i{
+	   font-size: 25px;
+	   color: white;
+	   transition: 0.3;
+	}
+	.content .social i:hover{
+	   color: #ff6200;
+	}
+	.app-button{
+	   background-color: transparent;
+	   border: none;
+	   outline: none;
+	   box-shadow: none;  
+       position: relative;1
+       bottom: -210px;
+       left: -400px;	   
+	}
+    footer{
+	   position: absolute;
+       text-align: center;
+	   color: white;
+	   z-index: 2; 
+       width: 100%;            
+       padding: 50px; 
+       bottom: -5%; 		
+    }
+    
+   </style>
+<script>
+       document.addEventListener('DOMContentLoaded', function() {
+			var keyframes = `
+				@keyframes fadeIn {
+					from {
+						opacity: 0;
+					}
+					to {
+						opacity: 1;
+					}
+				}
+			`;
+
+			var style = document.createElement('style');
+			style.type = 'text/css';
+			style.innerHTML = keyframes;
+			document.head.appendChild(style);
+			
+			var elementToAnimate = document.querySelector('.box');
+			elementToAnimate.style.animation = 'fadeIn 1s ease-out';
+		});
+</script>
+</head>
+
+<body>
+  
+   <div class="container">
+      <div class="box">
+         <nav>
+             <a href="#" class="logo">Troy Dave Amol</a>
+             <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="IT111 Blog Entries Page.html">IT111 Blog Entries Page</a></li>
+                <li><a href="flex.html">Flex Page</a></li>
+             </ul>
+         </nav>
+         <div class="content">
+            <div class="section-1">
+               <h1>Hi, I am Troy</h1>
+               <h3>Major Output in IT 111</h3>
+               <p>"Your future is created by what you do today"</p>
+			   <a href="#" class="btn">About</a>
+            </div>
+            <div class="section-2">	
+               <img src="MotionNinja_20231126061507.png" style="position: relative; right: -200px; bottom: -150px;">
+            </div>	
+									
+            <button class="app-button">
+			   <a href="https://web.facebook.com/profile.php?id=100008450226587">
+		           <img src="vecteezy_facebook-logo-png-facebook-icon-transparent-png_18930476_638.png" alt="Facebook Icon" style="width: 93px; height: 93px; position: relative; left: -70px; bottom: -210px;">
+		       </a>	   
+			</button>
+			<button class="app-button">
+               <a href="https://www.youtube.com/channel/UCmmMwusgDcgXvC9kGn12C0g">
+                   <img src="youtube-logo-png-2092.png" alt="Youtube Icon" style="width: 80px; height: 60px; position: relative; bottom: -209px; left: -20px;">
+               </a>
+            </button>
+			<button class="app-button">
+               <a href="https://www.instagram.com/tetsou14/">
+                   <img src="instagram-icon-transparent-27.jpg" alt="Instagram Icon" style="width: 60px; height: 60px; position: relative; bottom: -209px; left: 30px; ">
+               </a>
+            </button>
+      </div>
+   </div>          
+    
+   <footer>
+     Credits: Troy Dave Amol
+   </footer>
+</body>
+</html>
